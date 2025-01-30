@@ -35,7 +35,7 @@
   </style>
 </head>
 <body>
-
+  {% include 'nav.html' %}
   <!-- Header -->
   <h1 class="text-4xl font-extrabold text-gray-800 mt-8">Jovian Careers</h1>
 
@@ -74,9 +74,9 @@
 
           <!-- Apply Button -->
           <div>
-            <button class="btn-hover border border-blue-500 text-blue-500 px-6 py-3 rounded-lg font-medium transition duration-300">
+            <a href="mailto:gk877428@gmail.com?subject=Application%20for%20{{ job['title'] }}&body=YOUR%20NAME:%0D%0A%0D%0ARESUME:%0D%0A%0D%0ALINKEDIN%20PROFILE:%0D%0A%0D%0A%0A" class="btn-hover border border-blue-500 text-blue-500 px-6 py-3 rounded-lg font-medium transition duration-300">
               Apply
-            </button>
+            </a>
           </div>
         </div>
       {% endfor %}
@@ -86,11 +86,11 @@
 
   <!-- Footer -->
   <div class="text-center py-6 mt-8 bg-gray-100 rounded-lg shadow-lg w-full">
-    <button class="btn-hover border border-gray-700 text-gray-700 hover:bg-gray-700 hover:text-white font-medium py-3 px-6 rounded-md transition duration-300">
+    <a href="mailto:gk877428@gmail.com?subject=Issue%20with%20Jovians%20Careers%20Platform&body=Please%20describe%20the%20issue%20you%20faced%20here:%0D%0A%0D%0A%0A" class="btn-hover border border-gray-700 text-gray-700 hover:bg-gray-700 hover:text-white font-medium py-3 px-6 rounded-md transition duration-300">
       Contact Us
-    </button>
+    </a>
     <p class="mt-4 text-gray-600 text-sm font-medium">© 2024, Jovians-Careers. All rights reserved.</p>
   </div>
-
+   {% include 'footer.html' %}
 </body>
 </html>
